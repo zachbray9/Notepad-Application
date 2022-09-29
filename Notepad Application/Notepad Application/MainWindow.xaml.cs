@@ -42,10 +42,10 @@ namespace Notepad_Application
 
             if(openFileDialogue.ShowDialog() == true)
             {
-                string fileName = openFileDialogue.FileName;
-                FileName = fileName;
-                mainWindow.Title = $"{FileName} - NotePad";
-                textBox.Text = File.ReadAllText(fileName);
+                string fileName = System.IO.Path.GetFileName(openFileDialogue.FileName);                           //Does not include file path
+                FileName = openFileDialogue.FileName;                                                              //Includes the file path
+                mainWindow.Title = $"{fileName} - NotePad";
+                textBox.Text = File.ReadAllText(FileName);
             }
         }
 
