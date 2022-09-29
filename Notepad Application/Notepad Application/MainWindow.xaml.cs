@@ -42,8 +42,8 @@ namespace Notepad_Application
 
             if(openFileDialogue.ShowDialog() == true)
             {
-                string fileName = System.IO.Path.GetFileName(openFileDialogue.FileName);                           //Does not include file path
                 FileName = openFileDialogue.FileName;                                                              //Includes the file path
+                string fileName = System.IO.Path.GetFileName(FileName);                           //Does not include file path
                 mainWindow.Title = $"{fileName} - NotePad";
                 textBox.Text = File.ReadAllText(FileName);
             }
@@ -51,23 +51,38 @@ namespace Notepad_Application
 
         private void saveMenuItem_Click(object sender, RoutedEventArgs e)
         {
-
+            if (FileName == null)
+                SaveDocumentAs();
+            else
+                SaveDocument();
         }
 
         private void saveAsMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            SaveFileDialog saveFileDialogue = new SaveFileDialog();
-            saveFileDialogue.DefaultExt = ".txt";
-            saveFileDialogue.Filter = "Text Document (.txt)|*.txt";
-            if(saveFileDialogue.ShowDialog() == true)
-            {
-
-            }
+            SaveDocumentAs();
         }
 
         private void exitMenuItem_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void SaveDocument()
+        {
+                File.WriteAllText(FileName, textBox.Text);
+        }
+
+        private void SaveDocumentAs()
+        {
+            SaveFileDialog saveFileDialogue = new SaveFileDialog();
+            saveFileDialogue.DefaultExt = ".txt";
+            saveFileDialogue.Filter = "Text Document (.txt)|*.txt";
+            if (saveFileDialogue.ShowDialog() == true)
+            {
+                FileName = saveFileDialogue.FileName;
+                mainWindow.Title = $"{System.IO.Path.GetFileName(FileName)} - NotePad";
+                SaveDocument();
+            }
         }
     }
 }
