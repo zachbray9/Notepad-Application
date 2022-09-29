@@ -1,0 +1,22 @@
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\bin\Debug\net5.0-windows\Notepad Application.exe
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\bin\Debug\net5.0-windows\Notepad Application.deps.json
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\bin\Debug\net5.0-windows\Notepad Application.runtimeconfig.json
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\bin\Debug\net5.0-windows\Notepad Application.runtimeconfig.dev.json
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\bin\Debug\net5.0-windows\Notepad Application.dll
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\bin\Debug\net5.0-windows\ref\Notepad Application.dll
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\bin\Debug\net5.0-windows\Notepad Application.pdb
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application.csproj.AssemblyReference.cache
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application_MarkupCompile.cache
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application_MarkupCompile.lref
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application.g.resources
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application.AssemblyInfoInputs.cache
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application.AssemblyInfo.cs
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application.csproj.CoreCompileInputs.cache
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application.dll
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\ref\Notepad Application.dll
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application.pdb
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application.genruntimeconfig.cache
