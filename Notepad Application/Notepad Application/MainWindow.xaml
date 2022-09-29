@@ -14,8 +14,8 @@
             <MenuItem x:Name="fileMenu" Header="File">
                 <MenuItem x:Name="newMenuItem" Header="New"/>
                 <MenuItem x:Name="openMenuItem" Header="Open" Click="openMenuItem_Click"/>
-                <MenuItem x:Name="saveMenuItem" Header="Save"/>
-                <MenuItem x:Name="saveAsMenuItem" Header="Save As..."/>
+                <MenuItem x:Name="saveMenuItem" Header="Save" Click="saveMenuItem_Click"/>
+                <MenuItem x:Name="saveAsMenuItem" Header="Save As..." Click="saveAsMenuItem_Click"/>
                 <Separator/>
                 <MenuItem x:Name="exitMenuItem" Header="Exit" Click="exitMenuItem_Click"/>
             </MenuItem>

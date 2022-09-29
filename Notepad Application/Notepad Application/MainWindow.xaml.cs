@@ -56,7 +56,13 @@ namespace Notepad_Application
 
         private void saveAsMenuItem_Click(object sender, RoutedEventArgs e)
         {
+            SaveFileDialog saveFileDialogue = new SaveFileDialog();
+            saveFileDialogue.DefaultExt = ".txt";
+            saveFileDialogue.Filter = "Text Document (.txt)|*.txt";
+            if(saveFileDialogue.ShowDialog() == true)
+            {
 
+            }
         }
 
         private void exitMenuItem_Click(object sender, RoutedEventArgs e)
