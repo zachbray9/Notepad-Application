@@ -20,3 +20,6 @@ C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Applica
 C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\ref\Notepad Application.dll
 C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application.pdb
 C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Notepad Application.genruntimeconfig.cache
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Views\NotepadHome.g.cs
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\Views\NotepadHome.baml
+C:\Users\zachb\Documents\Github Repositories\Notepad-Application\Notepad Application\Notepad Application\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
