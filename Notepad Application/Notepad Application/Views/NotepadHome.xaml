@@ -25,6 +25,6 @@
             <MenuItem Header="Edit"/>
             <MenuItem Header="View"/>
         </Menu>
-        <TextBox Grid.Row ="1" Height="Auto" Padding="0, 10" AcceptsReturn="True" AcceptsTab="True" TextWrapping="NoWrap" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
+        <TextBox Grid.Row ="1" Height="Auto" Padding="0, 10" AcceptsReturn="True" AcceptsTab="True" TextWrapping="NoWrap" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Text="{Binding Text}"/>
     </Grid>
 </UserControl>

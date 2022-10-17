@@ -1,4 +1,5 @@
-﻿using Notepad_Application.ViewModels;
+﻿using Notepad_Application.Commands;
+using Notepad_Application.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,18 +12,26 @@ namespace Notepad_Application
 {
     public class DocumentViewModel : ViewModelBase
     {
+        private Document currentDocument;
+
+        public DocumentViewModel()
+        {
+            OpenCommand = new OpenCommand(this);
+            currentDocument = new Document();
+        }
 
         private string text;
         public string Text
         {
             get
             {
-                return text;
+                return currentDocument.Text;
+                //return text;
             }
             set
             {
-                text = value;
-                //PropertyChanged(Text);
+                currentDocument.Text = value;
+                OnPropertyChanged(nameof(Text));
             }
         }
 
@@ -31,11 +40,11 @@ namespace Notepad_Application
         {
             get
             {
-                return fileName;
+                return currentDocument.FileName;
             }
             set
             {
-                fileName = value;
+                currentDocument.FileName = value;
                 //PropertyChanged(FileName);
             }
         }
@@ -45,11 +54,11 @@ namespace Notepad_Application
         {
             get
             {
-                return filePath;
+                return currentDocument.FilePath;
             }
             set
             {
-                filePath = value;
+                currentDocument.FilePath = value;
             }
         }
 
