@@ -16,7 +16,12 @@ namespace Notepad_Application
 
         public DocumentViewModel()
         {
+            //NewCommand = new NewCommand();
+            //NewWindowCommand = new NewWindowCommand();
             OpenCommand = new OpenCommand(this);
+            //SaveCommand = new SaveCommand();
+            //SaveAsCommand = new SaveAsCommand();
+            ExitCommand = new ExitCommand();
             currentDocument = new Document();
         }
 
@@ -45,7 +50,7 @@ namespace Notepad_Application
             set
             {
                 currentDocument.FileName = value;
-                //PropertyChanged(FileName);
+                OnPropertyChanged(nameof(FileName));
             }
         }
 
@@ -62,6 +67,16 @@ namespace Notepad_Application
             }
         }
 
+        public ICommand NewCommand
+        {
+            get;
+        }
+
+        public ICommand NewWindowCommand
+        {
+            get;
+        }
+
         public ICommand OpenCommand
         {
             get;
@@ -76,6 +91,12 @@ namespace Notepad_Application
         {
             get;
         }
+
+        public ICommand ExitCommand
+        {
+            get;
+        }
+
         
     }
 }
