@@ -20,7 +20,7 @@ namespace Notepad_Application
             //NewWindowCommand = new NewWindowCommand();
             OpenCommand = new OpenCommand(this);
             SaveCommand = new SaveCommand(this);
-            //SaveAsCommand = new SaveAsCommand();
+            SaveAsCommand = new SaveAsCommand(this);
             ExitCommand = new ExitCommand();
             currentDocument = new Document();
         }
