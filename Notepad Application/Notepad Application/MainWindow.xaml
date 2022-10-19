@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Notepad_Application" xmlns:views="clr-namespace:Notepad_Application.Views"
         mc:Ignorable="d"
-        Title="Untitled - Notepad"
+        Title="{Binding FileName}"
         Width="700"
         Height="650">
     <Grid>

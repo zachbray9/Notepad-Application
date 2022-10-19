@@ -14,8 +14,8 @@
         
         <Menu Grid.Row="0">
             <MenuItem Header="File">
-                <MenuItem Name ="newMenuItem" Header="New"/>
-                <MenuItem Name="newWindowMenuItem" Header="New Window"/>
+                <MenuItem Name ="newMenuItem" Header="New" Command="{Binding NewCommand}"/>
+                <MenuItem Name="newWindowMenuItem" Header="New Window" Command="{Binding NewWindowCommand}"/>
                 <MenuItem Name="openMenuItem" Header="Open"  Command="{Binding OpenCommand}"/>
                 <MenuItem Name="saveMenuItem" Header="Save" Command="{Binding SaveCommand}"/>
                 <MenuItem Name="saveAsMenuItem" Header="Save As" Command="{Binding SaveAsCommand}"/>
@@ -25,6 +25,6 @@
             <MenuItem Header="Edit"/>
             <MenuItem Header="View"/>
         </Menu>
-        <TextBox Grid.Row ="1" Height="Auto" Padding="0, 10" AcceptsReturn="True" AcceptsTab="True" TextWrapping="NoWrap" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Text="{Binding Text}"/>
+        <TextBox Grid.Row ="1" Height="Auto" Padding="0, 10" AcceptsReturn="True" AcceptsTab="True" TextWrapping="NoWrap" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}"/>
     </Grid>
 </UserControl>

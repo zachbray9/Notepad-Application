@@ -20,7 +20,23 @@ namespace Notepad_Application
             Text = text;
         }
         */
-        public string FileName { get; set; }
+
+        private string fileName;
+        public string FileName 
+        {
+            get
+            {
+                if (fileName == null)
+                    return "Untitled - Notepad";
+                else
+                    return fileName;
+            }
+
+            set
+            {
+                fileName = $"{value} - Notepad";
+            }
+        }
 
         public string FilePath { get; set; }
         public string Text { get; set; }

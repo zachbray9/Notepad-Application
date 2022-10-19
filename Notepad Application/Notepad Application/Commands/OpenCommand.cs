@@ -20,7 +20,9 @@ namespace Notepad_Application.Commands
         {
 
             OpenFileDialog openFileDialogue = new OpenFileDialog();
-            if(openFileDialogue.ShowDialog() == true)
+            openFileDialogue.DefaultExt = ".txt";
+            openFileDialogue.Filter = "Text Document (.txt)|*.txt";
+            if (openFileDialogue.ShowDialog() == true)
             {
                 DocumentViewModel.FilePath = openFileDialogue.FileName;
                 DocumentViewModel.FileName = System.IO.Path.GetFileName(DocumentViewModel.FilePath);
