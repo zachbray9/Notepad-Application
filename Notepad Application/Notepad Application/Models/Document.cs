@@ -13,14 +13,6 @@ namespace Notepad_Application
 
         }
 
-        /*public Document(string fileName = null, string filePath, string text)
-        {
-            FileName = fileName;
-            filePath = FilePath;
-            Text = text;
-        }
-        */
-
         private string fileName;
         public string FileName 
         {
@@ -34,7 +26,10 @@ namespace Notepad_Application
 
             set
             {
-                fileName = $"{value} - Notepad";
+                if (value == null)
+                    fileName = $"Untitled - Notepad";
+                else
+                    fileName = $"{value} - Notepad";
             }
         }
 

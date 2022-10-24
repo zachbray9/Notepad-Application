@@ -16,12 +16,13 @@ namespace Notepad_Application
 
         public DocumentViewModel()
         {
-            //NewCommand = new NewCommand();
-            //NewWindowCommand = new NewWindowCommand();
             OpenCommand = new OpenCommand(this);
+            NewCommand = new NewCommand(this);
+            NewWindowCommand = new NewWindowCommand();
             SaveCommand = new SaveCommand(this);
             SaveAsCommand = new SaveAsCommand(this);
             ExitCommand = new ExitCommand();
+
             currentDocument = new Document();
         }
 
