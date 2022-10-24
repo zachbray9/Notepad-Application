@@ -10,9 +10,13 @@ namespace Notepad_Application.Commands
     {
         public override void Execute(object parameter)
         {
-            throw new NotImplementedException();
-            //MainWindow newWindow = new MainWindow();
-            //newWindow.Show();
+            //throw new NotImplementedException();
+            MainWindow newWindow = new MainWindow
+            {
+                DataContext = new DocumentViewModel()
+            };
+
+            newWindow.Show();
         }
     }
 }
