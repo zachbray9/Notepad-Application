@@ -32,7 +32,6 @@ namespace Notepad_Application
             get
             {
                 return currentDocument.Text;
-                //return text;
             }
             set
             {

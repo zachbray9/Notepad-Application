@@ -12,8 +12,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
-        <Menu Grid.Row="0">
-            <MenuItem Header="File">
+        <Menu Grid.Row="0" FontSize="14" FontFamily="Calibri" Padding="10, 10, 10, 0">
+            <MenuItem Header="File" Padding="10, 5, 10, 5">
                 <MenuItem Name ="newMenuItem" Header="New" Command="{Binding NewCommand}"/>
                 <MenuItem Name="newWindowMenuItem" Header="New Window" Command="{Binding NewWindowCommand}"/>
                 <MenuItem Name="openMenuItem" Header="Open"  Command="{Binding OpenCommand}"/>
@@ -22,9 +22,23 @@
                 <Separator/>
                 <MenuItem Name="exitMenuItem" Header="Exit" Command="{Binding ExitCommand}"/>
             </MenuItem>
-            <MenuItem Header="Edit"/>
-            <MenuItem Header="View"/>
+            <MenuItem Header="Edit" Padding="10, 5, 10, 5">
+                <MenuItem Header="Undo" Command="ApplicationCommands.Undo"/>
+                <Separator/>
+                <MenuItem Name="cutMenuItem" Header="Cut" Command="ApplicationCommands.Cut"/>
+                <MenuItem Header="Copy" Command="ApplicationCommands.Copy"/>
+                <MenuItem Header="Paste" Command="ApplicationCommands.Paste"/>
+                <MenuItem Header="Delete" Command="ApplicationCommands.Delete"/>
+                <Separator/>
+                <MenuItem Header="Find" Command="ApplicationCommands.Find"/>
+                <MenuItem Header="Replace" Command="ApplicationCommands.Replace"/>
+                <Separator/>
+                <MenuItem Header="Select All" Command="ApplicationCommands.SelectAll"/>
+            </MenuItem>
+                    <MenuItem Header="View" Padding="10, 5, 10, 5">
+                <MenuItem Name="darkModeMenuItem" Header="Dark Mode" IsCheckable="True"/>
+            </MenuItem>
         </Menu>
-        <TextBox Grid.Row ="1" Height="Auto" Padding="0, 10" AcceptsReturn="True" AcceptsTab="True" TextWrapping="NoWrap" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Name="documentTextbox" Grid.Row ="1" Height="Auto" Padding="0, 10" AcceptsReturn="True" AcceptsTab="True" TextWrapping="NoWrap" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}" IsUndoEnabled="True"/>
     </Grid>
 </UserControl>

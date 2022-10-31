@@ -24,5 +24,6 @@ namespace Notepad_Application.Views
         {
             InitializeComponent();
         }
+
     }
 }
