@@ -9,6 +9,13 @@ namespace Notepad_Application.Commands
 {
     class ExitCommand : CommandBase
     {
+        private DocumentViewModel DocumentViewModel;
+
+        public ExitCommand(DocumentViewModel documentViewModel)
+        {
+            DocumentViewModel = documentViewModel;
+        }
+
         public override void Execute(object parameter)
         {
             Application.Current.Shutdown();

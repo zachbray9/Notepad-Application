@@ -20,6 +20,9 @@
                 <MenuItem Name="saveMenuItem" Header="Save" Command="{Binding SaveCommand}"/>
                 <MenuItem Name="saveAsMenuItem" Header="Save As" Command="{Binding SaveAsCommand}"/>
                 <Separator/>
+                <MenuItem Name="pageSetupMenuItem" Header="Page Setup" Command="ApplicationCommands.PrintPreview"/>
+                <MenuItem Name="printMenuItem" Header="Print" Command="ApplicationCommands.Print"/>
+                <Separator/>
                 <MenuItem Name="exitMenuItem" Header="Exit" Command="{Binding ExitCommand}"/>
             </MenuItem>
             <MenuItem Header="Edit" Padding="10, 5, 10, 5">
